@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Health-Care</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="C:\Users\koush\Downloads\favicon (1).ico">
+</head>
+<style>
+       h1 {font-size:60px;}
+	 h1 {text-align:center;}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 6px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<body>
+<br>
+<h1><i>Child Health Care</i></h1>
+    <hr>
+
+    <nav id="sidenav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+        </ul>
+    </nav>
+  <hr>
+    <img src="images/menu.png"  id="menuBtn">
+ 
+<section id="courses">
+        <div class="container course-row">
+            <div class="course-left-col">
+            <div class="course-text">
+                <h1>List of Ambulances available</h1>
+                <span class="square"></span><br>
+                <p>.<br>
+			</p>
+			
+				<table>
+  <tr>
+    <th>Serial Number</th>
+    <th>Ambulance Number</th>
+    <th>Driver Name</th>
+    <th>Driver Contact</th>
+    <th>Click to Call</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>KA01P1998</td>
+    <td>Sh.Rajbir Shingh</td>
+    <td>9991186068</td>
+    <td><a href="tel:+919991186068">Call</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>KA31P2901</td>
+    <td>Sh.Kuldeep Yadav</td>
+    <td>9466515662</td>
+    <td><a href="tel:+919466515662">Call</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>KA04A8055</td>
+    <td>Sh.Vinod Kumar</td>
+    <td>9992988964</td>
+    <td><a href="tel:+919992988964">Call</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>KA05M2020</td>
+    <td>Sh.Darshan S R</td>
+    <td>8901196343</td>
+    <td><a href="tel:+918901196343">Call</a></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>KA21H1301</td>
+    <td>Sh.Naveen Kumar</td>
+    <td>7899657379</td>
+    <td><a href="tel:+917899657379">Call</a></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>KA31U3422</td>
+    <td>Sh.Harsha</td>
+    <td>9468133222</td>
+    <td><a href="tel:+919468133222">Call</a></td>
+  </tr>
+</table>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div><br>
+            </div>
+            </div>
+            <div class="course-right-col">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/man-finding-near-by-hospital-3958599-3277768.png" alt="coursepic">
+            </div>
+        </div>
+    </section>
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+      var sidenav = document.getElementById("sidenav");
+
+      sidenav.style.right = "-250px";
+      menuBtn.onclick = function(){
+          if(sidenav.style.right == "-250px"){
+              sidenav.style.right = "0";
+          }
+          else{
+              sidenav.style.right = "-250px";
+          }
+      }
+  </script>
+  </body>
+  </html>

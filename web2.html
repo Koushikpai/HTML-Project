@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Health-Care</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="C:\Users\koush\Downloads\favicon (1).ico">
+</head>
+<style>
+       h1 {font-size:60px;}
+	 h1 {text-align:center;}
+input{
+ width:60%;
+ height:30px;
+ outline:none;
+ border:1px solid black;
+ border-radius:5px;
+ font-size:15px;
+}
+font{
+ display:block;
+ font-size:25px;
+}
+</style>
+<body>
+<br>
+<h1><i>Child Health Care</i></h1>
+    <hr>
+	<section id="header">
+        <div class="container">
+           
+            <div class="headertext">
+                <h1>Locate the best child care hospital near you.</h1>
+                
+			<br>
+			<font>PINCODE</font>
+            <input type="text" id="url"/>
+            <input type="button" value="Submit" onclick="myfun()"/>
+            <h2>Click Here to Navigate:</h2>
+            <p id="output"></p>
+            <script>
+                function myfun() {
+                var base = "https://www.google.com/maps/search/child+health+care+hospitals+near+";
+                document.getElementById("output").innerHTML = "<a href='" + base + document.getElementById("url").value + "'>" + base + document.getElementById("url").value +
+                     "</a>";
+               }
+            </script>
+		<br>
+		<span class="square"></span>
+		<br>
+		<p>You will face many defeats in life, but never let yourself be defeated</p>
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+            </div>
+        </div>
+    </section>
+    <nav id="sidenav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+        </ul>
+    </nav>
+  <hr>
+    <img src="images/menu.png"  id="menuBtn">
+<script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sidenav = document.getElementById("sidenav");
+
+        sidenav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+            }
+            else{
+                sidenav.style.right = "-250px";
+            }
+        }
+    </script>
+</body>
+</html>

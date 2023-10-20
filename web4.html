@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Health-Care</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="C:\Users\koush\Downloads\favicon (1).ico">
+</head>
+<style>
+       h1 {font-size:60px;}
+	 h1 {text-align:center;}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 6px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<body>
+<br>
+<h1><i>Child Health Care</i></h1>
+    <hr>
+
+    <nav id="sidenav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+        </ul>
+    </nav>
+  <hr>
+    <img src="images/menu.png"  id="menuBtn">
+ 
+<section id="courses">
+        <div class="container course-row">
+            <div class="course-left-col">
+            <div class="course-text">
+                <h1>Expert Doctors</h1>
+                <span class="square"></span><br>
+                <p>.<br>
+			</p>
+			
+				<table>
+  <tr>
+    <th>Doctor Name</th>
+    <th>Experience</th>
+    <th>Contact</th>
+    <th>Click to Call</th>
+  </tr>
+  <tr>
+    <td>Dr.Kevin</td>
+    <td>20</td>
+    <td>6363479360</td>
+    <td><a href="tel:+916363479360">Call</a></td>
+  </tr>
+  <tr>
+    <td>Dr.Edward</td>
+    <td>23</td>
+    <td>9731072103</td>
+    <td><a href="tel:+919731072103">Call</a></td>
+  </tr>
+  <tr>
+    <td>Dr.Sagar</td>
+    <td>10</td>
+    <td>8900789653</td>
+    <td><a href="tel:+918900789653">Call</a></td>
+  </tr>
+  <tr>
+    <td>Dr.Priya</td>
+    <td>25</td>
+    <td>7899435267</td>
+    <td><a href="tel:+917899435267">Call</a></td>
+  </tr>
+  <tr>
+    <td>Dr.Kamala</td>
+    <td>15</td>
+    <td>7899652379</td>
+    <td><a href="tel:+917899652379">Call</a></td>
+  </tr>
+  <tr>
+    <td>Dr.Sudha</td>
+    <td>36</td>
+    <td>7899539812</td>
+    <td><a href="tel:+917899539812">Call</a></td>
+  </tr>
+</table>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div><br>
+            </div>
+            </div>
+            <div class="course-right-col">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/man-finding-near-by-hospital-3958599-3277768.png" alt="coursepic">
+            </div>
+        </div>
+    </section>
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+      var sidenav = document.getElementById("sidenav");
+
+      sidenav.style.right = "-250px";
+      menuBtn.onclick = function(){
+          if(sidenav.style.right == "-250px"){
+              sidenav.style.right = "0";
+          }
+          else{
+              sidenav.style.right = "-250px";
+          }
+      }
+  </script>
+  </body>
+  </html>
